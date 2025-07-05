@@ -1,7 +1,6 @@
-
 backend:
   name: github
-  repo: ESTUDIO-CONTABLE-JA-SERVCONT/web-servcont
+  repo: ESTUDIO-CONTABLE-JA-SERVCONT/WEB-SERVCONT
   branch: main
 
 media_folder: "uploads"
