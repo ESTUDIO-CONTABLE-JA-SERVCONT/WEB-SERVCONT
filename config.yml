@@ -1,0 +1,27 @@
+
+backend:
+  name: github
+  repo: ESTUDIO-CONTABLE-JA-SERVCONT/web-servcont
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "paginas"
+    label: "Páginas del sitio"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
+
+  - name: "descargas"
+    label: "Archivos para Descargar"
+    folder: "content/descargas"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Archivo", name: "file", widget: "file" }
